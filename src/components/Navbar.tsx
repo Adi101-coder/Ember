@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="navbar-links">
-          {navItems.filter(item => item.name !== 'Safety Tips').map((item) => (
+          {navItems.map((item) => (
             <motion.a
               key={item.name}
               href={item.href}

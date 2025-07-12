@@ -2,6 +2,7 @@ import React from 'react';
 import '../stylesheets/LandingPage.css';
 import Footer from './Footer';
 import { motion } from 'framer-motion';
+import logo from '../assets/logo11.png';
 
 const LandingPage = () => {
   return (
@@ -11,13 +12,9 @@ const LandingPage = () => {
       {/* Navbar */}
       <nav className="landing-navbar">
         <div className="landing-logo">
-          <span className="logo-icon">&#128293;</span>
-          <span className="logo-text">ember</span>
+          <img src={logo} alt="Ember Logo" className="logo-img" />
         </div>
-        <div className="landing-nav-links">
-          <a href="#tips" className="landing-nav-link">Safety Tips</a>
-          <button className="landing-nav-btn">Browse Sites</button>
-        </div>
+        {/* Removed Browse Sites button from navbar */}
       </nav>
       {/* Hero Section */}
       <main className="landing-hero">
