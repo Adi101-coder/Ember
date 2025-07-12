@@ -1,0 +1,96 @@
+/* Features styles */
+.features-section {
+  padding: 5rem 0;
+  background: #1E293B;
+}
+.features-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.features-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 999px;
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  color: #3B82F6;
+  margin-bottom: 1.5rem;
+}
+.features-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #F8FAFC;
+  margin-bottom: 1rem;
+}
+.features-title-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.features-desc {
+  font-size: 1.2rem;
+  color: #64748B;
+  margin-bottom: 2rem;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.features-card {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  color: #F8FAFC;
+  box-shadow: 0 2px 16px 0 #3B82F680;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.features-card:hover {
+  border: 1px solid #3B82F6;
+  box-shadow: 0 4px 24px 0 #3B82F6cc;
+}
+.features-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(90deg, #3B82F6 0%, #a855f7 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.features-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.features-card-desc {
+  color: #64748B;
+}
+.features-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.features-cta-btn {
+  background: linear-gradient(90deg, #3B82F6 0%, #a855f7 100%);
+  color: #fff;
+  padding: 1em 2em;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.features-cta-btn:hover {
+  background: linear-gradient(90deg, #a855f7 0%, #3B82F6 100%);
+  box-shadow: 0 2px 16px 0 #3B82F680;
+} 

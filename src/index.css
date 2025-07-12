@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0F172A;
+  color: #F8FAFC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #F8FAFC;
+  margin: 0 0 0.5em 0;
+}
+
+a {
+  color: #3B82F6;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  padding: 0.75em 1.5em;
+  background: linear-gradient(135deg, #3B82F6 0%, #764ba2 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+button:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #3B82F6 100%);
+  box-shadow: 0 2px 16px 0 #3B82F680;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1E293B;
+}
+::-webkit-scrollbar-thumb {
+  background: #3B82F6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563EB;
+}
